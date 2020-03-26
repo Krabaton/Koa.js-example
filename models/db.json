@@ -1,0 +1,39 @@
+{
+  "works": [
+    {
+      "name": "loftblog",
+      "link": "loftblog.ru",
+      "desc": "Сайт с уроками по web разработке",
+      "picture": "/img/work/loftblog.jpg"
+    },
+    {
+      "name": "itloft",
+      "link": "itloft.ru",
+      "desc": "Сайт агенства интернет решений itloft",
+      "picture": "/img/work/itloft.jpg"
+    },
+    {
+      "name": "landing",
+      "link": "landing.kiev.ua",
+      "desc": "Сайт по разработке лендингов с гарантией",
+      "picture": "/img/work/landingsloft.jpg"
+    },
+    {
+      "name": "Личный сайт",
+      "link": "kovalchuk.us",
+      "desc": "Личный сайт Дмитрия Ковальчука",
+      "picture": "/img/work/kovalchuk.png"
+    },
+    {
+      "name": "loftschool",
+      "link": "loftschool.com",
+      "desc": "Школа онлайн образования",
+      "picture": "/img/work/loftschool.png"
+    }
+  ],
+  "user": {
+    "login": "root",
+    "hash": "911de090470e0d81a181f0a1509b084a31f6a45f992d663c1af76ff416652fd15ca3f5479f4b83db6cddfdcd11dfc6c9b5c6c0e82d49d04c6466ede9bc03510b838f127d5f542e9c85282bff5fc3772043eff6773aa10efd3ae4039b80a5d20b308280b8168f5bcc5c24dd6cc328816ac9c1eda7cb7979fd72125922cd09dbd839d7352e0a788e42cb7ba40c982364f72ee351f5044856747aa13ea8800a9d17387ab0770ccf62389fa0fa33967dfa0736856254ca55e4e2753a1f2244ce91b004f881546cddcf6d245fd0b579ad21949ba6b19ddb77c8b84300f02387b5c71277702caf1f3492804a75df11365dbbda6cc73b6915885d5c9818050e486cfe04be8b429719b2d5997610f457d74744e43bb64650f613b747f092c91bae048df39b5c3b725a94abab2a4cc2bbcbfeb2be5f398270c2b8b99f4685f1d37ee5d70fa0772dfc66d067776c296d4a992ace6db3d08934eebbdb1e153e3e48a41b0e58b10070a4d06e460564180cd0a36ac4c76b5c7ad397db94307859f060fc572f267d9a8fb18f6a336f97d83f526393f057e226cbd4e78d4175fe18f6baec392d64e477810c084ebe657dc4e237158dfd2300702af24d6ab03ff72cf6268ad409f4a764e6a6eafd06a8db278db7fd603fd6f3f88a07674caad3511e3acf378d647ef58e9f4129bd8d4405ccb738750621e178606ff2deddb63d642ac8d967861e4d",
+    "salt": "b9e5117cd625b8bfe4bdcb431d62d987"
+  }
+}

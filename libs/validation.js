@@ -7,32 +7,13 @@ module.exports.isValidFile = async (ctx, next) => {
   const schema = Joi.object().keys({
     name: Joi.string().min(1).max(300).required(),
     size: Joi.number().integer().min(1).required(),
-  })
-  const { name, size } = ctx.request.files.file
-  const { error } = schema.validate({ name, size })
-  if (error) {
-    const { path } = ctx.request.files.file
-    await unlink(path)
-
-    ctx.status = 400
-    return (ctx.body = {
-      mes: error,
-      status: 'Error',
-    })
-  }
-  return next()
-}
-
-module.exports.isValidDescFile = async (ctx, next) => {
-  const schema = Joi.object({
     projectName: Joi.string().min(1).max(30).required(),
     projectUrl: Joi.string().max(256).required(),
     text: Joi.string().required(),
     fileurl: Joi.string().allow('').optional(),
   })
-
-  const { error } = schema.validate(ctx.request.body)
-
+  const { name, size } = ctx.request.files.file
+  const { error } = schema.validate({ ...ctx.request.body, name, size })
   if (error) {
     const { path } = ctx.request.files.file
     await unlink(path)

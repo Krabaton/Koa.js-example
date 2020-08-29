@@ -15,10 +15,10 @@ router.post(
     multipart: true,
     formidable: {
       uploadDir: process.cwd() + '/public/upload',
+      maxFileSize: 2 * 1024 * 1024,
     },
   }),
   validation.isValidFile,
-  validation.isValidDescFile,
   controllers.upload,
 )
 router.post('/login', koaBody(), validation.isValidAuth, controllers.auth)

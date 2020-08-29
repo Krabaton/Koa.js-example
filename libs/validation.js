@@ -51,8 +51,6 @@ module.exports.isValidAuth = (ctx, next) => {
   })
   const { error } = schema.validate(ctx.request.body)
   if (error) {
-    // const message = error.details.map((el) => el.message).join('; ')
-
     ctx.status = 400
     return (ctx.body = {
       mes: error,

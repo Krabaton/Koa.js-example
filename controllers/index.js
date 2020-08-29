@@ -44,6 +44,7 @@ module.exports.upload = async (ctx) => {
     status: 'OK',
   }
 }
+
 module.exports.contactMe = async (ctx) => {
   await ctx.render('pages/contact-me')
 }
@@ -81,7 +82,7 @@ module.exports.email = async (ctx) => {
       subject: `Sending email from ${name}`,
       text: message,
     }
-    sgMail.send(msg)
+    await sgMail.send(msg)
   } catch (err) {
     return (ctx.body = {
       mes: err.message,
